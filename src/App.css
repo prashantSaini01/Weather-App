@@ -1,0 +1,127 @@
+:root {
+  --theme-bg-color: #525B66;
+  --theme-text-color: white;
+  --theme-primary-color: #0B121E;
+  --theme-accent-color: #2B90FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--theme-bg-color);
+  height: 100%;
+}
+
+.weather-card {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-card .card {
+  background-color: var(--theme-primary-color);
+  border-radius: 20px;
+  border: none;
+  height: 70vh;
+}
+
+.search-bar {
+  background-color: var(--theme-bg-color);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.input-group button {
+  background-color: var(--theme-accent-color);
+  color: white;
+  padding: 1rem 3rem;
+  border: 1px solid var(--theme-accent-color);
+  border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 991px) {
+  .input-group button {
+    padding: 1rem;
+  }
+}
+
+.input-group .form-control {
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--theme-accent-color);
+  background-color: transparent;
+  color: var(--theme-text-color) !important;
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+}
+
+.input-group .form-control:focus {
+  border: 1px solid var(--theme-accent-color);
+  background-color: transparent;
+  color: var(--theme-text-color) !important;
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+}
+
+::placeholder {
+  color: var(--theme-text-color) !important;
+}
+
+.input-group .input-group-text {
+  border: 1px solid var(--theme-accent-color);
+  color: var(--theme-text-color);
+  background-color: transparent;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.weather-data {
+  color: white;
+}
+
+.weather-data span {
+  color: white;
+}
+
+.text-blue {
+  color: var(--theme-accent-color) !important;
+}
+
+hr {
+  background-color: var(--theme-text-color);
+}
+
+.current-conditions, .air-quality {
+  margin-top: 20px;
+}
+
+.condition-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.condition-item span {
+  flex: 1;
+  text-align: center;
+}
+
+.condition-icon {
+  margin-left: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .condition-item span {
+    display: block;
+    text-align: left;
+  }
+
+  .condition-item {
+    display: block;
+  }
+} 
